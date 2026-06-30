@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { PageLoader } from '../components/ui/page-loader'
 import { MobileAppLayout } from '../layouts/mobile-app-layout'
 import {
@@ -16,7 +16,7 @@ function withSuspense(node: React.ReactNode) {
   return <Suspense fallback={<PageLoader />}>{node}</Suspense>
 }
 
-export const appRouter = createBrowserRouter([
+export const appRouter = createHashRouter([
   {
     path: routePaths.home,
     element: <MobileAppLayout />,
