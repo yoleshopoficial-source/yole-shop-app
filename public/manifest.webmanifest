@@ -1,0 +1,12 @@
+{
+  "name": "YOLE SHOP APP",
+  "short_name": "YOLE Shop",
+  "description": "PWA profesional para gestión comercial, pedidos y pagos.",
+  "theme_color": "#0f172a",
+  "background_color": "#020617",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": []
+}
