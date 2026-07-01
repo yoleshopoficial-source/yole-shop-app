@@ -7,6 +7,9 @@ const base = process.env.GITHUB_PAGES === 'true' ? `/${repositoryName}/` : '/'
 
 export default defineConfig({
   base,
+  build: {
+    cssMinify: false,
+  },
   plugins: [
     react(),
     VitePWA({
